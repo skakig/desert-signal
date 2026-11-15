@@ -2,3 +2,17 @@ User-agent: *
 Allow: /
 Disallow: /p/
 Disallow: /desert-signal/p/
+Disallow: /tinocos/
+Disallow: /desert-signal/tinocos/
+Disallow: /unicar/
+Disallow: /desert-signal/unicar/
+Disallow: /oscars/
+Disallow: /desert-signal/oscars/
+Disallow: /genuine/
+Disallow: /desert-signal/genuine/
+Disallow: /raindrops/
+Disallow: /desert-signal/raindrops/
+Disallow: /boulevard/
+Disallow: /desert-signal/boulevard/
+Disallow: /downtown-vintage/
+Disallow: /desert-signal/downtown-vintage/
