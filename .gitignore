@@ -1,0 +1,9 @@
+# Keep working files and internal notes off the public repo.
+_work/
+shots/
+DEPLOY.md
+FACTS.md
+PALETTE.md
+set-phone.sh
+set-origin.sh
+.DS_Store
