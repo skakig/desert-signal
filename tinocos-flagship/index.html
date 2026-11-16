@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Tinoco's Auto Body · Collision repair and paint, N Nellis Blvd, Las Vegas (preview)</title>
+<meta name="description" content="Collision repair, body work and paint at 1322 N Nellis Blvd, Suite C, Las Vegas. Call (702) 985-7381. Design preview by Desert Signal.">
+<meta name="theme-color" content="#F1EFE9">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-640.webp" imagesrcset="img/hero-640.webp 640w, img/hero-800.webp 800w, img/hero-1000.webp 1000w, img/hero-1300.webp 1300w" imagesizes="(min-width:900px) 60vw, 100vw" fetchpriority="high">
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url(fonts/instrument-italic.woff2) format("woff2");font-style:italic;font-weight:400;font-display:swap}
+:root{
+  --paper:#F1EFE9;--paper-2:#E6E2D8;--ink:#1B1A17;--ink-2:#4F4A42;--rule:#CFC9BC;
+  --red:#B0241C;--red-ink:#8E1C16;--on-red:#FFFFFF;
+  --night-text:#F1EFE9;--night-2:#B9B2A4;--night-rule:#3A3731;
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:72px;--s9:112px;--s10:168px;
+  --gut:clamp(20px,4.4vw,64px);
+  --sans:Archivo,"Arial Narrow",Arial,sans-serif;--serif:"Instrument Serif",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 var(--sans);font-stretch:100%;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.night :focus-visible{outline-color:var(--night-text)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:12px 16px;z-index:99}
+.skip:focus{left:8px;top:8px}
+
+/* label strip */
+.pv{background:var(--ink);color:var(--night-text);font-size:.8125rem;line-height:1.3;padding:8px var(--gut);display:flex;justify-content:space-between;gap:16px}
+.pv a{color:var(--night-text);text-underline-offset:3px}
+.pv span+span{color:var(--night-2)}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid transparent;transition:border-color .3s}
+header.top.lined{border-bottom-color:var(--rule)}
+.mark{transition:opacity .35s}.js header.top:not(.past) .mark:not(:focus-visible){opacity:0}
+.hd{display:flex;align-items:center;gap:var(--s5);padding:10px var(--gut);min-height:60px}
+.mark{font-weight:800;font-stretch:62%;text-transform:uppercase;font-size:1.375rem;letter-spacing:.01em;line-height:1;text-decoration:none;white-space:nowrap}
+.mark b{color:var(--red);font-weight:800}
+.nav{display:none;gap:var(--s6);margin-left:auto;font-size:.9375rem}
+.nav a{text-decoration:none;padding:8px 0;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .3s}
+.nav a:hover{background-size:100% 1px}
+.tag{display:none;font-size:.8125rem;color:var(--ink-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;font:600 1rem/1 var(--sans);font-stretch:100%;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.red{background:var(--red);border-color:var(--red);color:var(--on-red)}
+.btn.red:hover{background:var(--red-ink);border-color:var(--red-ink)}
+.night .btn{border-color:var(--night-text);color:var(--night-text)}
+.night .btn:hover{background:var(--night-text);color:var(--ink)}
+.hd .btn{margin-left:auto;min-height:44px;padding:0 16px}
+.hd .btn .long{display:none}
+
+/* hero */
+.hero{padding:var(--s5) var(--gut) 0;display:grid;grid-template-columns:1fr;gap:var(--s5)}
+.hero h1{margin:0;font-weight:800;font-stretch:62%;text-transform:uppercase;line-height:.8;letter-spacing:-.005em;font-size:clamp(4.4rem,21.5vw,13.5rem)}
+.hero h1>span{display:block}.hero h1 .w{display:inline}
+.hero h1 .r{color:var(--red);background:linear-gradient(100deg,var(--red) 0 44%,#DB4A40 50%,var(--red) 56% 100%) 100% 0/300% 100% repeat-x;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sheen 2.2s .4s cubic-bezier(.3,.6,.2,1) both}
+@keyframes sheen{from{background-position:100% 0}to{background-position:0% 0}}
+@media (prefers-reduced-motion:reduce){.hero h1 .r{animation:none}}
+.hero-ph{margin:0 calc(var(--gut) * -1);position:relative;overflow:hidden;aspect-ratio:640/717;background:var(--paper-2)}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero-ph figcaption,.cap{font-size:.8125rem;line-height:1.35;color:var(--ink-2);margin-top:var(--s2)}
+.hero-ph figcaption{position:absolute;left:var(--gut);bottom:12px;margin:0;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.hero-copy{display:grid;gap:var(--s5);padding-bottom:var(--s8)}
+.lede{font-size:clamp(1.25rem,2.1vw,1.625rem);line-height:1.3;max-width:30ch;margin:0;font-stretch:90%;font-weight:500}
+.status{display:flex;align-items:center;gap:10px;font-size:.9375rem;color:var(--ink-2);margin:0}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--ink-2);flex:none}
+.status.open i{background:#2F7D3B;box-shadow:0 0 0 4px rgba(47,125,59,.15)}
+.ctas{display:flex;flex-wrap:wrap;gap:var(--s3)}
+
+/* quote */
+.vin{padding:var(--s9) var(--gut) var(--s9);border-top:1px solid var(--rule)}
+.vin blockquote{margin:0;max-width:17ch;font:italic 400 clamp(2.4rem,7.4vw,6.4rem)/.98 var(--serif);letter-spacing:-.01em;position:relative}
+.vin blockquote::before{content:"\201C";position:absolute;right:100%;margin-right:.04em;color:var(--red)}
+.vin .src{margin:var(--s6) 0 0;max-width:46ch;color:var(--ink-2);font-size:1rem}
+.vin .src strong{color:var(--ink);font-weight:600}
+
+/* work index */
+.work{padding:var(--s9) var(--gut);position:relative}
+.sec-h{display:grid;gap:var(--s4);margin-bottom:var(--s7)}
+h2{margin:0;font-weight:750;font-stretch:68%;text-transform:uppercase;line-height:.9;font-size:clamp(2.6rem,9vw,6.6rem);letter-spacing:-.005em}
+.sec-h p{margin:0;max-width:44ch;color:var(--ink-2)}
+.rows{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.rows li{display:grid;grid-template-columns:2.4rem 1fr;gap:4px var(--s4);padding:var(--s5) 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.rows .n{font-size:.8125rem;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.rows h3{margin:0;font-weight:700;font-stretch:72%;text-transform:uppercase;font-size:clamp(1.7rem,5.6vw,3.6rem);line-height:.95;transition:color .25s,transform .35s cubic-bezier(.2,.7,.2,1)}
+.rows p{grid-column:2;margin:0;color:var(--ink-2);max-width:40ch}
+.peek{display:none}
+
+/* signature: shade -> sun */
+.night{background:var(--ink);color:var(--night-text)}
+.sun{position:relative}
+.sun-stage{display:grid;grid-template-rows:auto 1fr auto;gap:var(--s5);padding:var(--s8) var(--gut)}
+.sun-h h2{color:var(--night-text)}
+.sun-h p{margin:var(--s3) 0 0;color:var(--night-2);max-width:40ch}
+.sun-body{display:grid;gap:var(--s6);align-items:center}
+.panel{position:relative;overflow:hidden;aspect-ratio:3/4;max-height:52svh;width:min(100%,calc(52svh*.75));background:#2a1210}
+.panel img{width:100%;height:100%;object-fit:cover}
+.panel .shade,.panel .glare{position:absolute;inset:0;pointer-events:none}
+.panel .shade{background:linear-gradient(160deg,rgba(18,24,36,.72),rgba(18,24,36,.5));opacity:0}
+.panel .glare{background:radial-gradient(60% 45% at 50% 40%,rgba(255,236,200,.55),rgba(255,236,200,0) 70%);mix-blend-mode:screen;opacity:0}
+.meter{display:flex;justify-content:space-between;font-size:.8125rem;color:var(--night-2);border-top:1px solid var(--night-rule);padding-top:10px;max-width:calc(52svh*.75)}
+.meter span{transition:color .3s}
+.lines{margin:0;font:italic 400 clamp(1.7rem,4.4vw,3.4rem)/1.08 var(--serif)}
+.lines span{display:inline;transition:color .5s}
+.lines-src{margin:var(--s5) 0 0;color:var(--night-2);font-size:.9375rem}
+
+/* lot */
+.lot{padding:var(--s9) var(--gut)}
+.lot-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6) var(--s4)}
+.lot figure{margin:0}
+.lf:nth-child(even){margin-top:var(--s8)}
+.lot .ph{aspect-ratio:4/5}.lot .ph img{width:100%;height:100%;object-fit:cover}
+.lot .cap span{font-variant-numeric:tabular-nums;color:var(--red-ink);font-weight:600;margin-right:6px}
+.ph{position:relative}.ph::after,.hero-ph::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.10;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.lot .ph{overflow:hidden;background:var(--paper-2)}
+.shoot{position:relative;aspect-ratio:4/5;background:var(--paper-2);display:flex;flex-direction:column;justify-content:flex-end;padding:var(--s5);
+  background-image:linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(var(--ink),var(--ink)),linear-gradient(rgba(27,26,23,.25),rgba(27,26,23,.25)),linear-gradient(rgba(27,26,23,.25),rgba(27,26,23,.25));
+  background-size:22px 2px,2px 22px,22px 2px,2px 22px,22px 2px,2px 22px,22px 2px,2px 22px,1px 100%,100% 1px;
+  background-position:12px 12px,12px 12px,calc(100% - 12px) 12px,calc(100% - 12px) 12px,12px calc(100% - 12px),12px calc(100% - 12px),calc(100% - 12px) calc(100% - 12px),calc(100% - 12px) calc(100% - 12px),33.33% 0,0 33.33%;
+  background-repeat:no-repeat}
+.shoot .k{font-size:.8125rem;color:var(--red-ink);font-weight:600;margin:0 0 var(--s2)}
+.shoot p{margin:0;font:italic 400 clamp(1.4rem,2.6vw,2rem)/1.1 var(--serif)}
+.shoot small{display:block;margin-top:var(--s3);font-size:.8125rem;color:var(--ink-2)}
+.shoot{aspect-ratio:4/5}
+@media (max-width:599px){.shoot{padding:var(--s4)}.shoot p{font-size:1.2rem}}
+
+/* reviews */
+.rev{padding:var(--s9) var(--gut);border-top:1px solid var(--rule)}
+.score{display:flex;align-items:flex-end;gap:var(--s5);flex-wrap:wrap}
+.score .big{font-weight:800;font-stretch:62%;font-size:clamp(6rem,24vw,15rem);line-height:.78;color:var(--red)}
+.score h2{font-size:clamp(1.6rem,4.4vw,3rem);max-width:14ch}
+.qs{display:grid;gap:var(--s7);margin-top:var(--s8)}
+.qs figure{margin:0;border-top:1.5px solid var(--ink);padding-top:var(--s4)}
+.qs blockquote{margin:0;font:italic 400 clamp(1.5rem,2.7vw,2.2rem)/1.12 var(--serif)}
+.qs figcaption{margin-top:var(--s3);font-size:.875rem;color:var(--ink-2)}
+.more{margin-top:var(--s7)}
+
+/* visit */
+.visit{padding:0 var(--gut) var(--s8)}
+.front{margin:0 calc(var(--gut) * -1) var(--s8);position:relative}
+.front img{width:100%;aspect-ratio:800/279;object-fit:cover}
+.front .cap{position:absolute;left:var(--gut);bottom:12px;color:#fff;margin:0;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.addr-wrap{max-width:none}
+.visit-grid{display:grid;gap:var(--s7)}
+.addr{font-weight:750;font-stretch:68%;text-transform:uppercase;font-size:clamp(2.6rem,8.6vw,6.4rem);line-height:.9;margin:0}
+.addr small{display:block;font-size:.3em;font-stretch:100%;font-weight:500;text-transform:none;line-height:1.4;color:var(--night-2);margin-top:var(--s3);letter-spacing:0}
+.tel{display:inline-block;font-weight:700;font-stretch:80%;font-size:clamp(1.8rem,4.6vw,3rem);text-decoration:none;margin-top:var(--s5);border-bottom:2px solid var(--red);line-height:1.1}
+.hours{width:100%;max-width:420px;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid var(--night-rule);font-weight:400}
+.hours td{text-align:right;color:var(--night-2)}
+.hours tr.today th,.hours tr.today td{color:var(--night-text);font-weight:600}
+.hours tr.today th::after{content:" · today";font-weight:400;color:var(--night-2)}
+.map{position:relative;overflow:hidden;aspect-ratio:900/640;max-width:640px}
+.map img{width:100%;height:100%;object-fit:cover}
+.map .pin{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 6px rgba(176,36,28,.25)}
+.map figcaption{font-size:.75rem;color:var(--night-2);margin-top:6px}
+.contact{display:grid;gap:var(--s4);align-content:start}
+.contact p{margin:0;color:var(--night-2)}
+.contact a.mail{color:var(--night-text)}
+footer{padding:var(--s7) var(--gut) calc(var(--s7) + 72px);border-top:1px solid var(--night-rule);font-size:.875rem;color:var(--night-2);display:grid;gap:var(--s3)}
+footer p{margin:0;max-width:70ch}
+footer a{color:var(--night-text)}
+
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1.4fr 1fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--rule)}
+.mbar .btn{min-height:52px}
+
+@media (min-width:600px){
+  .qs{grid-template-columns:1fr 1fr;column-gap:var(--s7)}
+  .lot-grid{grid-template-columns:repeat(3,1fr);column-gap:var(--s5)}
+  .lf:nth-child(even){margin-top:0}.lf:nth-child(3n+2){margin-top:var(--s9)}.lf:nth-child(3n){margin-top:var(--s7)}
+  .qs figure:nth-child(even){margin-top:var(--s9)}
+}
+@media (min-width:900px){
+  .pv{font-size:.8125rem}
+  .nav{display:flex}
+  .tag{display:block}
+  .hd .btn{margin-left:var(--s5)}
+  .hd .btn .long{display:inline}
+  .hero{grid-template-columns:repeat(12,1fr);column-gap:var(--s4);padding-top:0;height:calc(100svh - 96px);min-height:600px;max-height:1000px;grid-template-rows:1fr auto}
+  .hero h1{grid-column:1/6;grid-row:1;font-size:min(10.4vw,23svh);align-self:end;padding-bottom:var(--s6)}
+  .hero h1 .w{display:block}
+  .hero-copy{grid-column:1/6;grid-row:2;padding-bottom:var(--s7);border-top:1.5px solid var(--ink);padding-top:var(--s5);grid-template-columns:1fr auto;align-items:end}
+  .hero-copy .lede{grid-column:1/-1}
+  .hero-ph{grid-column:6/-1;grid-row:1/3;margin:0 calc(var(--gut) * -1) 0 0;aspect-ratio:auto;height:100%}
+  .hero-ph figcaption{left:var(--s5)}
+  .vin{display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--s4)}
+  .vin blockquote{grid-column:2/12;max-width:none}
+  .vin .src{grid-column:8/12}
+  .sec-h{grid-template-columns:repeat(12,1fr);column-gap:var(--s4);align-items:end}
+  .sec-h h2{grid-column:1/8}.sec-h p{grid-column:9/-1}
+  .rows li{grid-template-columns:4rem 1fr 22rem;padding:var(--s5) 0}
+  .rows p{grid-column:3;align-self:center}
+  .rows li:hover h3{color:var(--red);transform:translateX(12px)}
+  .peek{display:block;position:fixed;left:0;top:0;width:300px;aspect-ratio:4/3;pointer-events:none;z-index:40;opacity:0;transition:opacity .25s;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.35)}
+  .peek img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .2s}
+  .peek img.on{opacity:1}
+  .peek.on{opacity:1}
+  .sun-stage{grid-template-columns:repeat(12,1fr);column-gap:var(--s4);grid-template-rows:auto 1fr}
+  .sun-h{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--s4);align-items:end}
+  .sun-h h2{grid-column:1/8}.sun-h p{grid-column:9/-1}
+  .sun-body{grid-column:1/-1;grid-template-columns:repeat(12,1fr);column-gap:var(--s4)}
+  .sun-body .pcol{grid-column:1/6}
+  .sun-body .qcol{grid-column:7/-1}
+  .panel{max-height:66svh;width:min(100%,calc(66svh*.75))}
+  .meter{max-width:calc(66svh*.75)}
+  .visit-grid{grid-template-columns:repeat(12,1fr);column-gap:var(--s4)}
+  .visit-grid>.a{grid-column:1/8}.visit-grid>.contact{grid-column:9/-1}
+  .visit-grid>.map{grid-column:1/8}.visit-grid>.hrs{grid-column:9/-1}
+  .mbar{display:none}
+  footer{padding-bottom:var(--s7)}
+}
+@media (min-width:1600px){:root{--gut:max(64px,calc((100vw - 1480px)/2))}}
+
+/* --- scroll motion (Matterhorn pinned-stage technique, CSS 3D instead of film) --- */
+.s3d-on .sun{height:340vh}
+.s3d-on .sun-stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;align-content:center}
+.s3d-on .sun .shade{opacity:calc(1 - var(--p,0) * 2.2)}
+.s3d-on .sun .glare{opacity:calc((var(--p,0) - .3) * 2.4);transform:translate3d(calc((var(--p,0) - .5) * 70%),calc((.5 - var(--p,0)) * 30%),0)}
+.s3d-on .sun .panel img{transform:scale(calc(1.14 - var(--p,0) * .14));transform-origin:60% 40%}
+.s3d-on .sun .pcol{transform:perspective(1100px) rotateY(calc((.5 - var(--p,0)) * 18deg));transform-origin:50% 50%}
+.s3d-on .sun [data-l]{opacity:0;transition:opacity .6s}
+.s3d-on .sun[data-step="0"] [data-l="0"],
+.s3d-on .sun[data-step="1"] [data-l="0"],.s3d-on .sun[data-step="1"] [data-l="1"]{opacity:1}
+.s3d-on .sun-stage{padding-top:84px}
+
+.s3d-on .sun[data-step="2"] [data-l]{opacity:1}
+.s3d-on .sun[data-step="2"] [data-l="2"] em{color:#fff;font-style:italic;background:linear-gradient(var(--red),var(--red)) 0 92%/100% .09em no-repeat}
+.s3d-on .sun .meter span{color:var(--night-2)}
+.s3d-on .sun[data-step="0"] .meter [data-m="0"],.s3d-on .sun[data-step="1"] .meter [data-m="1"],.s3d-on .sun[data-step="2"] .meter [data-m="2"]{color:var(--night-text)}
+.meter-bar{display:none}
+.s3d-on .meter-bar{display:block;height:2px;background:var(--night-rule);max-width:calc(52svh*.75);margin-top:-1px}
+.s3d-on .meter-bar i{display:block;height:100%;background:var(--red);transform-origin:0 50%;transform:scaleX(var(--p,0))}
+@media (min-width:900px){.s3d-on .meter-bar{max-width:calc(66svh*.75)}}
+
+@media (max-width:899px){
+  .s3d-on .sun-stage{padding:80px var(--gut) 112px;align-content:end;grid-template-rows:auto;gap:var(--s4)}
+  .s3d-on .sun-h{position:relative;z-index:2;order:-1}
+  .s3d-on .sun-h p{display:none}
+  .s3d-on .sun-body{display:block}
+  .s3d-on .sun .pcol{position:absolute;inset:0;z-index:0;transform:none}
+  .s3d-on .sun .panel{width:100%;height:100%;max-height:none;aspect-ratio:auto}
+  .s3d-on .sun .panel::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(27,26,23,.95) 0,rgba(27,26,23,.86) 48%,rgba(27,26,23,.2) 72%,rgba(27,26,23,.75) 100%)}
+  .s3d-on .sun .meter{position:absolute;left:var(--gut);right:var(--gut);bottom:72px;max-width:none;z-index:2;border-top:0}
+  .s3d-on .sun .meter-bar{position:absolute;left:var(--gut);right:var(--gut);bottom:100px;max-width:none;z-index:2}
+  .s3d-on .sun .qcol{position:relative;z-index:2;padding-bottom:var(--s5)}
+  .s3d-on .lines{font-size:clamp(1.45rem,6.4vw,2rem)}
+  .s3d-on .sun h2{font-size:clamp(2.2rem,11vw,3.4rem)}
+}
+/* hero depth: photo eases back, wordmark lifts */
+.s3d-on .hero h1{transform:translate3d(0,calc(var(--p,0) * -60px),0)}
+.s3d-on .hero-ph img{transform:scale(calc(1.06 - var(--p,0) * .06)) translate3d(0,calc(var(--p,0) * 40px),0);transform-origin:50% 30%}
+@media (min-width:900px){.s3d-on .hero-ph{transform:perspective(1400px) rotateY(calc(var(--mx,0) * -2.5deg)) rotateX(calc(var(--my,0) * 2deg));transition:transform .4s cubic-bezier(.2,.7,.2,1)}}
+
+/* enter effects */
+.s3d-on .rise{--k:clamp(0,calc(var(--e,1) * 1.25 - var(--lag,0)),1);transform:perspective(900px) translate3d(0,calc((1 - var(--k)) * 60px),0) rotateX(calc((1 - var(--k)) * 18deg));transform-origin:50% 100%}
+.s3d-on .plane{transform:perspective(1200px) rotateX(calc((1 - var(--e,1)) * 40deg)) scale(calc(.92 + var(--e,1) * .08));transform-origin:50% 100%}
+.s3d-on .lot .ph img{transform:scale(calc(1.12 - var(--e,1) * .12))}
+.s3d-on .swing{--k:clamp(0,calc(var(--e,1) * 1.3 - var(--lag,0)),1);transform:perspective(1000px) translate3d(0,calc((1 - var(--k)) * 40px),0) rotateY(calc((1 - var(--k)) * var(--dir,1) * 16deg))}
+.s3d-on .mbar,.s3d-on header.top{transform:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoBodyShop","name":"Tinoco's Auto Body","telephone":"+1-702-985-7381","email":"tinocosautobody@yahoo.com","address":{"@type":"PostalAddress","streetAddress":"1322 N Nellis Blvd, Suite C","addressLocality":"Las Vegas","addressRegion":"NV","postalCode":"89110","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":36.183687,"longitude":-115.062045},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"13:00"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="pv"><span>Preview by <a href="https://skakig.github.io/desert-signal/">Desert Signal</a></span><span>A design proposal. Not the shop's official site.</span></div>
+<header class="top" id="top">
+  <div class="hd">
+    <a class="mark" href="#main" aria-label="Tinoco's Auto Body, top of page">Tinoco's <b>Auto Body</b></a>
+    <nav class="nav" aria-label="Sections"><a href="#work">The work</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+    <a class="btn red" href="tel:+17029857381"><span>Call</span><span class="long">(702) 985-7381</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" data-s3d="top" data-s3d-pointer aria-labelledby="h1">
+  <h1 id="h1"><span>Tinoco's</span><span class="r"><span class="w">Auto</span> <span class="w">Body</span></span></h1>
+  <figure class="hero-ph">
+    <img src="img/hero-640.webp" srcset="img/hero-640.webp 640w, img/hero-800.webp 800w, img/hero-1000.webp 1000w, img/hero-1300.webp 1300w" sizes="(min-width:900px) 60vw, 100vw" width="640" height="717" alt="A red Ford Mustang GT parked in front of the shop's tan block wall, with TINOCO'S AUTO BODY hand-painted in red above the bay doors" fetchpriority="high">
+    <figcaption>The wall on North Nellis.</figcaption>
+  </figure>
+  <div class="hero-copy">
+    <p class="lede">Collision repair and paint on North Nellis Boulevard, Las Vegas.</p>
+    <p class="status" id="status"><i></i><span>Mon to Fri 8 to 6, Sat 8 to 1</span></p>
+    <div class="ctas"><a class="btn red" href="tel:+17029857381">Call (702) 985-7381</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tinocos%20Auto%20Body%2C%201322%20N%20Nellis%20Blvd%20Suite%20C%2C%20Las%20Vegas%2C%20NV%2089110" rel="noopener">Directions</a></div>
+  </div>
+</section>
+
+<section class="vin" aria-label="A customer review">
+  <blockquote class="rise" data-s3d="in">I actually had to check the VIN number to make sure it was the same car.</blockquote>
+  <p class="src"><strong>Google review, December 2025.</strong> “He replaced my hood and fenders, cleaned my headlights, and removed every scratch and dent.”</p>
+</section>
+
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="sec-h">
+    <h2 id="work-h">Collision, body and paint</h2>
+    <p>Estimates, insurance claims and the repair itself, handled at one shop on North Nellis.</p>
+  </div>
+  <ol class="rows">
+    <li class="rise" data-s3d="in" data-peek="0"><span class="n">01</span><h3>Collision repair</h3><p>Front ends, hoods, fenders, crushed bumpers.</p></li>
+    <li class="rise" data-s3d="in" data-peek="1"><span class="n">02</span><h3>Color matching</h3><p>Factory colors, including tri-coat finishes.</p></li>
+    <li class="rise" data-s3d="in" data-peek="2"><span class="n">03</span><h3>Complete paint jobs</h3><p>Masked and sprayed in our own paint booth.</p></li>
+    <li class="rise" data-s3d="in" data-peek="3"><span class="n">04</span><h3>Dents and scratches</h3><p>Body work and scratch removal.</p></li>
+    <li class="rise" data-s3d="in" data-peek="4"><span class="n">05</span><h3>Bumpers</h3><p>Replaced and painted. Some are done the same day.</p></li>
+    <li class="rise" data-s3d="in" data-peek="5"><span class="n">06</span><h3>Headlights and polish</h3><p>Cloudy lenses cleaned, paint polished.</p></li>
+  </ol>
+  <div class="peek" aria-hidden="true">
+    <img data-src="img/chevy-640.webp" alt=""><img data-src="img/finish-480.webp" alt=""><img data-src="img/booth-480.webp" alt=""><img data-src="img/damage-480.webp" alt=""><img data-src="img/tacoma-480.webp" alt=""><img data-src="img/ram-640.webp" alt="">
+  </div>
+</section>
+
+<section class="sun night" data-s3d="pin" data-steps="3" aria-labelledby="sun-h">
+  <div class="sun-stage">
+    <div class="sun-h">
+      <h2 id="sun-h">Shade, then sun</h2>
+      <p>Paint that matches under a roof can miss in Las Vegas daylight. One customer saw it, and said so.</p>
+    </div>
+    <div class="sun-body">
+      <div class="pcol">
+        <div class="panel"><img src="img/panel-480.webp" srcset="img/panel-480.webp 480w, img/panel-720.webp 720w" sizes="(min-width:900px) 36vw, 70vw" width="480" height="768" loading="lazy" decoding="async" alt="Close-up of a freshly painted red door panel, shot outdoors"><div class="shade"></div><div class="glare"></div></div>
+        <div class="meter" aria-hidden="true"><span data-m="0">Shade</span><span data-m="1">Full sun</span><span data-m="2">Made right</span></div>
+        <div class="meter-bar" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="qcol">
+        <blockquote class="lines"><span data-l="0">“The paint color is tough to match, and although the first pass looked great in the shade, </span><span data-l="1">it was a bit off in the sun. </span><span data-l="2">When I mentioned it, <em>Alfredo immediately agreed and made it right without hesitation.</em> The final result is perfect.”</span></blockquote>
+        <p class="lines-src">Google review, November 2025.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lot" aria-labelledby="lot-h">
+  <div class="sec-h">
+    <h2 id="lot-h">From our lot</h2>
+    <p>Photos the shop posted to Google, 2023 to 2024. The two empty frames are the shot list for photo day.</p>
+  </div>
+  <div class="lot-grid">
+    <figure class="lf rise" data-s3d="in"><div class="ph"><img src="img/damage-480.webp" srcset="img/damage-480.webp 480w, img/damage-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A red Mustang GT in the lot with its front bumper and grille torn up and taped"></div><figcaption class="cap"><span>01</span> In the lot, March 2024</figcaption></figure>
+    <figure class="lf rise" data-s3d="in" style="--lag:.12"><div class="ph"><img src="img/booth-480.webp" srcset="img/booth-480.webp 480w, img/booth-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="Two crew members in red hoodies masking a car body inside the white paint booth"></div><figcaption class="cap"><span>02</span> Masking in the booth, March 2024</figcaption></figure>
+    <figure class="lf rise" data-s3d="in" style="--lag:.24"><div class="ph"><img src="img/finish-480.webp" srcset="img/finish-480.webp 480w, img/finish-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A red Chevrolet Camaro parked in front of the painted shop wall in afternoon sun"></div><figcaption class="cap"><span>03</span> At the wall, March 2023</figcaption></figure>
+    <figure class="lf rise" data-s3d="in"><div class="ph"><img src="img/tacoma-480.webp" srcset="img/tacoma-480.webp 480w, img/tacoma-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A white Toyota Tacoma in front of the painted shop wall"></div><figcaption class="cap"><span>04</span> At the wall, August 2024</figcaption></figure>
+    <div class="lf shoot rise" data-s3d="in" style="--lag:.12"><p class="k">Reserved for the photo shoot</p><p>Alfredo at the booth door, late light.</p><small>Portrait. To be photographed for the finished site.</small></div>
+    <div class="lf shoot rise" data-s3d="in" style="--lag:.24"><p class="k">Reserved for the photo shoot</p><p>The same red panel, shot in shade and then in full sun.</p><small>Detail pair. To be photographed for the finished site.</small></div>
+  </div>
+</section>
+
+<section class="rev" id="reviews" aria-labelledby="rev-h">
+  <div class="score"><span class="big" aria-hidden="true">5.0</span><h2 id="rev-h">On Google, across more than 140 reviews</h2></div>
+  <div class="qs">
+    <figure class="swing" data-s3d="in" style="--dir:-1"><blockquote>“They were able to get my car into the shop within a week of the damage, and the repairs were completed in under a week.”</blockquote><figcaption>Google review, January 2026</figcaption></figure>
+    <figure class="swing" data-s3d="in" style="--dir:1;--lag:.1"><blockquote>“The owner came to my house when my car was not drivable to provide me with a quote and sent a tow truck free of charge the following morning.”</blockquote><figcaption>Google review, March 2025</figcaption></figure>
+    <figure class="swing" data-s3d="in" style="--dir:-1"><blockquote>“I was informed of how the insurance process would be, and also about how the repair will be done.”</blockquote><figcaption>Google review, January 2026</figcaption></figure>
+    <figure class="swing" data-s3d="in" style="--dir:1;--lag:.1"><blockquote>“They replace and painted the new bumper the same day within a matter of hours.”</blockquote><figcaption>Google review, May 2025</figcaption></figure>
+  </div>
+  <p class="more"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tinocos%20Auto%20Body%201322%20N%20Nellis%20Blvd%20Las%20Vegas" rel="noopener">Read every review on Google</a></p>
+</section>
+
+<section class="visit night" id="visit" aria-labelledby="visit-h">
+  <figure class="front plane" data-s3d="in"><img src="img/front-800.webp" srcset="img/front-800.webp 800w, img/front-1440.webp 1440w, img/front-2000.webp 2000w" sizes="100vw" width="800" height="279" loading="lazy" decoding="async" alt="The shop front: tan block wall, three open bay doors, and a red Tinoco's Auto Body sign over each door"><figcaption class="cap">The front on North Nellis.</figcaption></figure>
+  <div class="visit-grid">
+    <div class="a">
+      <h2 class="addr" id="visit-h">1322 N Nellis Blvd<br>Suite C<small>Las Vegas, NV 89110. Look for the red signs over the bay doors.</small></h2>
+      <a class="tel" href="tel:+17029857381">(702) 985-7381</a>
+    </div>
+    <div class="contact">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tinocos%20Auto%20Body%2C%201322%20N%20Nellis%20Blvd%20Suite%20C%2C%20Las%20Vegas%2C%20NV%2089110" rel="noopener">Get directions</a>
+      <p>Email <a class="mail" href="mailto:tinocosautobody@yahoo.com">tinocosautobody@yahoo.com</a></p>
+    </div>
+    <figure class="map plane" data-s3d="in" style="margin:0"><img src="img/map.webp" width="900" height="640" loading="lazy" decoding="async" alt="Street map centered on 1322 N Nellis Blvd, Las Vegas"><span class="pin"></span><figcaption>Map data © OpenStreetMap contributors</figcaption></figure>
+    <div class="hrs">
+      <table class="hours" id="hours"><caption class="sr">Opening hours</caption>
+        <tbody>
+        <tr data-d="1"><th scope="row">Monday</th><td>8 AM to 6 PM</td></tr>
+        <tr data-d="2"><th scope="row">Tuesday</th><td>8 AM to 6 PM</td></tr>
+        <tr data-d="3"><th scope="row">Wednesday</th><td>8 AM to 6 PM</td></tr>
+        <tr data-d="4"><th scope="row">Thursday</th><td>8 AM to 6 PM</td></tr>
+        <tr data-d="5"><th scope="row">Friday</th><td>8 AM to 6 PM</td></tr>
+        <tr data-d="6"><th scope="row">Saturday</th><td>8 AM to 1 PM</td></tr>
+        <tr data-d="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="night">
+  <p>Tinoco's Auto Body, listed with the Nevada DMV as a licensed body shop.</p>
+  <p>Preview by <a href="https://skakig.github.io/desert-signal/">Desert Signal</a>. Built from public listings and photos of the shop posted online. Reviews are quoted as published on Google. Not the shop's official site.</p>
+</footer>
+<nav class="mbar" aria-label="Quick actions"><a class="btn red" href="tel:+17029857381">Call (702) 985-7381</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tinocos%20Auto%20Body%2C%201322%20N%20Nellis%20Blvd%20Suite%20C%2C%20Las%20Vegas%2C%20NV%2089110" rel="noopener">Directions</a></nav>
+<script>
+/*! s3d.js — tiny scroll-driven 3D kit for single-file preview sites. No deps, no build. ~2 KB.
+ *  Writes two CSS variables on each [data-s3d] element while it is near the viewport:
+ *    --p : 0→1 progress  (pin: through the pinned section; others: element travelling bottom→top)
+ *    --e : 0→1 "entered" (0 when the element's top hits the viewport bottom, 1 at ~55% up)
+ *  data-s3d="top" (hero): --p is 0 at load and 1 once the element has scrolled out the top.
+ *  data-s3d-pointer: on fine pointers also writes --mx/--my (-1..1) for a gentle mouse tilt.
+ *  data-s3d="pin" also sets data-step (0..steps-1) and can scrub a <video data-scrub>.
+ *  Does nothing (static page) under prefers-reduced-motion or without IntersectionObserver.
+ */
+(function () {
+  var d = document, root = d.documentElement, w = window;
+  var mq = w.matchMedia ? w.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  if (mq.matches || !('IntersectionObserver' in w) || !(w.CSS && CSS.supports && CSS.supports('transform-style', 'preserve-3d'))) return;
+  root.classList.add('s3d-on');
+
+  var els = [].slice.call(d.querySelectorAll('[data-s3d]'));
+  var live = new Set(), raf = 0, vh = w.innerHeight, stopped = false;
+  function clamp(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
+
+  // Matterhorn-style coalesced video scrub: only seek when the last seek finished.
+  function scrub(v, p) {
+    v._t = p;
+    if (v.seeking || !isFinite(v.duration) || v.duration <= 0) return;
+    var t = Math.min(v.duration - 1 / 24, p * v.duration);
+    if (Math.abs(v.currentTime - t) >= 1 / 30) v.currentTime = Math.max(0, t);
+  }
+
+  function frame() {
+    raf = 0;
+    if (stopped) return;
+    // Read every rect first, then write: no forced reflow between elements.
+    var batch = [];
+    live.forEach(function (el) { batch.push([el, el.getBoundingClientRect()]); });
+    batch.forEach(function (b) {
+      var el = b[0], r = b[1], p;
+      if (el._mode === 'top') {
+        p = clamp(-r.top / Math.max(r.height, 1));          // hero: 0 at page load → 1 when scrolled past
+      } else if (el._mode === 'pin') {
+        p = clamp(-r.top / Math.max(r.height - vh, 1));
+        var n = el._steps;
+        if (n) { var i = Math.min(n - 1, Math.floor(p * n)); if (el._i !== i) { el._i = i; el.setAttribute('data-step', i); } }
+        if (el._video) scrub(el._video, p);
+      } else {
+        p = clamp((vh - r.top) / (vh + r.height));
+      }
+      var e = clamp((vh - r.top) / (vh * 0.45));
+      el.style.setProperty('--p', p.toFixed(4));
+      el.style.setProperty('--e', e.toFixed(4));
+    });
+  }
+  function tick() { if (!raf) raf = requestAnimationFrame(frame); }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      var el = en.target;
+      if (en.isIntersecting) {
+        live.add(el);
+        var v = el._video;
+        if (v && v.preload !== 'auto') { v.preload = 'auto'; v.load(); }   // lazy-load scrub video only when near
+      } else live.delete(el);
+    });
+    tick();
+  }, { rootMargin: '30% 0px' });
+
+  els.forEach(function (el) {
+    el._mode = el.getAttribute('data-s3d');
+    el._steps = +el.getAttribute('data-steps') || 0;
+    el._video = el.querySelector('video[data-scrub]');
+    if (el._video) {
+      el._video.addEventListener('seeked', function () { scrub(el._video, el._video._t || 0); });
+      el._video.addEventListener('loadeddata', tick);
+    }
+    if (el._steps) el.setAttribute('data-step', 0);
+    io.observe(el);
+  });
+
+  if (w.matchMedia('(pointer: fine)').matches) {
+    [].forEach.call(d.querySelectorAll('[data-s3d-pointer]'), function (el) {
+      var pr = 0, mx = 0, my = 0;
+      el.addEventListener('pointermove', function (ev) {
+        var r = el.getBoundingClientRect();
+        mx = ((ev.clientX - r.left) / r.width) * 2 - 1; my = ((ev.clientY - r.top) / r.height) * 2 - 1;
+        if (!pr) pr = requestAnimationFrame(function () { pr = 0; if (stopped) return; el.style.setProperty('--mx', mx.toFixed(3)); el.style.setProperty('--my', my.toFixed(3)); });
+      }, { passive: true });
+      el.addEventListener('pointerleave', function () { el.style.setProperty('--mx', 0); el.style.setProperty('--my', 0); });
+    });
+  }
+
+  w.addEventListener('scroll', tick, { passive: true });
+  w.addEventListener('resize', function () { vh = w.innerHeight; tick(); });
+  // If the visitor turns on Reduce Motion mid-visit, drop back to the static page.
+  var off = function () {
+    if (!mq.matches) return;
+    stopped = true; io.disconnect(); root.classList.remove('s3d-on');
+    els.forEach(function (el) { el.style.removeProperty('--p'); el.style.removeProperty('--e'); });
+  };
+  if (mq.addEventListener) mq.addEventListener('change', off); else if (mq.addListener) mq.addListener(off);
+  tick();
+})();
+
+(function(){
+  var d=document;
+  d.documentElement.classList.add("js");var hd=d.getElementById("top"),hh=d.getElementById('h1');function hs(){hd.classList.toggle('lined',scrollY>40);hd.classList.toggle('past',hh.getBoundingClientRect().bottom<60)}addEventListener('scroll',hs,{passive:true});hs();
+  // open now, in shop time (America/Los_Angeles)
+  try{
+    var f=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var g={};f.forEach(function(p){g[p.type]=p.value});
+    var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g.weekday),m=(+g.hour%24)*60+(+g.minute);
+    var close=day>=1&&day<=5?18*60:day===6?13*60:0,open=8*60;
+    var st=d.getElementById('status'),t=st.querySelector('span');
+    if(close&&m>=open&&m<close){st.classList.add('open');t.textContent='Open now. Closes at '+(close===1080?'6 PM':'1 PM')+' today.'}
+    else{var nd=(m<open&&day>=1&&day<=6)?'today':(day===6||day===0)?'Monday':'tomorrow';t.textContent='Closed now. Opens 8 AM '+nd+'.'}
+    var row=d.querySelector('#hours tr[data-d="'+day+'"]');if(row)row.className='today';
+  }catch(e){}
+  // desktop: photo peek following the pointer over the work list
+  if(matchMedia('(min-width:900px) and (pointer:fine)').matches){
+    var pk=d.querySelector('.peek'),ims=pk.querySelectorAll('img'),loaded=false,x=0,y=0,raf=0;
+    function load(){if(loaded)return;loaded=true;ims.forEach(function(i){i.src=i.getAttribute('data-src')})}
+    d.querySelectorAll('.rows li').forEach(function(li){
+      li.addEventListener('pointerenter',function(){load();pk.classList.add('on');ims.forEach(function(i,k){i.classList.toggle('on',k==li.getAttribute('data-peek'))})});
+      li.addEventListener('pointerleave',function(){pk.classList.remove('on')});
+    });
+    d.querySelector('.rows').addEventListener('pointermove',function(e){x=e.clientX;y=e.clientY;if(!raf)raf=requestAnimationFrame(function(){raf=0;pk.style.transform='translate3d('+(x+28)+'px,'+(y-110)+'px,0) rotate(-2deg)'})},{passive:true});
+  }
+})();
+</script>
+</body>
+</html>
