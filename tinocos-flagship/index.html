@@ -22,7 +22,8 @@
   --sans:Archivo,"Arial Narrow",Arial,sans-serif;--serif:"Instrument Serif",Georgia,serif;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:88px}
+section[id]{scroll-margin-top:88px}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 var(--sans);font-stretch:100%;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
@@ -38,7 +39,7 @@ a{color:inherit}
 .pv span+span{color:var(--night-2)}
 
 /* header */
-header.top{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid transparent;transition:border-color .3s}
+header.top{position:relative;top:0;z-index:50;background:var(--paper);border-bottom:1px solid transparent;transition:border-color .3s}
 header.top.lined{border-bottom-color:var(--rule)}
 .mark{transition:opacity .35s}.js header.top:not(.past) .mark:not(:focus-visible){opacity:0}
 .hd{display:flex;align-items:center;gap:var(--s5);padding:10px var(--gut);min-height:60px}
@@ -68,16 +69,18 @@ header.top.lined{border-bottom-color:var(--rule)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .hero-ph figcaption,.cap{font-size:.8125rem;line-height:1.35;color:var(--ink-2);margin-top:var(--s2)}
 .hero-ph figcaption{position:absolute;left:var(--gut);bottom:12px;margin:0;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.6)}
-.hero-copy{display:grid;gap:var(--s5);padding-bottom:var(--s8)}
+.hero-copy{display:grid;gap:var(--s3);padding-bottom:var(--s5)}
+@media (max-width:899px){.hero{gap:var(--s4);padding-top:var(--s4)}.hero h1{font-size:clamp(3.4rem,17vw,8rem)}.hero-copy{order:2}.hero-ph{order:3;aspect-ratio:4/3}.lede{font-size:1.125rem;max-width:none}.ctas{flex-wrap:nowrap}.ctas .btn{flex:1 1 auto;padding:0 14px;white-space:nowrap}}
 .lede{font-size:clamp(1.25rem,2.1vw,1.625rem);line-height:1.3;max-width:30ch;margin:0;font-stretch:90%;font-weight:500}
+.rating{margin:0;font-size:.9375rem}.rating b{color:var(--red);font-weight:800;font-size:1.125rem;margin-right:4px}
 .status{display:flex;align-items:center;gap:10px;font-size:.9375rem;color:var(--ink-2);margin:0}
 .status i{width:9px;height:9px;border-radius:50%;background:var(--ink-2);flex:none}
 .status.open i{background:#2F7D3B;box-shadow:0 0 0 4px rgba(47,125,59,.15)}
 .ctas{display:flex;flex-wrap:wrap;gap:var(--s3)}
 
 /* quote */
-.vin{padding:var(--s9) var(--gut) var(--s9);border-top:1px solid var(--rule)}
-.vin blockquote{margin:0;max-width:17ch;font:italic 400 clamp(2.4rem,7.4vw,6.4rem)/.98 var(--serif);letter-spacing:-.01em;position:relative}
+.vin{padding:var(--s8) var(--gut);border-top:1px solid var(--rule)}
+.vin blockquote{margin:0;max-width:24ch;font:italic 400 clamp(1.8rem,4.4vw,3.6rem)/1.05 var(--serif);letter-spacing:-.01em;position:relative}
 .vin blockquote::before{content:"\201C";position:absolute;right:100%;margin-right:.04em;color:var(--red)}
 .vin .src{margin:var(--s6) 0 0;max-width:46ch;color:var(--ink-2);font-size:1rem}
 .vin .src strong{color:var(--ink);font-weight:600}
@@ -98,7 +101,7 @@ h2{margin:0;font-weight:750;font-stretch:68%;text-transform:uppercase;line-heigh
 .night{background:var(--ink);color:var(--night-text)}
 .sun{position:relative}
 .sun-stage{display:grid;grid-template-rows:auto 1fr auto;gap:var(--s5);padding:var(--s8) var(--gut)}
-.sun-h h2{color:var(--night-text)}
+.sun-h h2{color:var(--night-text);font-size:clamp(1.8rem,4.4vw,3.6rem)}
 .sun-h p{margin:var(--s3) 0 0;color:var(--night-2);max-width:40ch}
 .sun-body{display:grid;gap:var(--s6);align-items:center}
 .panel{position:relative;overflow:hidden;aspect-ratio:3/4;max-height:52svh;width:min(100%,calc(52svh*.75));background:#2a1210}
@@ -108,7 +111,7 @@ h2{margin:0;font-weight:750;font-stretch:68%;text-transform:uppercase;line-heigh
 .panel .glare{background:radial-gradient(60% 45% at 50% 40%,rgba(255,236,200,.55),rgba(255,236,200,0) 70%);mix-blend-mode:screen;opacity:0}
 .meter{display:flex;justify-content:space-between;font-size:.8125rem;color:var(--night-2);border-top:1px solid var(--night-rule);padding-top:10px;max-width:calc(52svh*.75)}
 .meter span{transition:color .3s}
-.lines{margin:0;font:italic 400 clamp(1.7rem,4.4vw,3.4rem)/1.08 var(--serif)}
+.lines{margin:0;font:italic 400 clamp(1.4rem,2.8vw,2.4rem)/1.12 var(--serif)}
 .lines span{display:inline;transition:color .5s}
 .lines-src{margin:var(--s5) 0 0;color:var(--night-2);font-size:.9375rem}
 
@@ -116,7 +119,7 @@ h2{margin:0;font-weight:750;font-stretch:68%;text-transform:uppercase;line-heigh
 .lot{padding:var(--s9) var(--gut)}
 .lot-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6) var(--s4)}
 .lot figure{margin:0}
-.lf:nth-child(even){margin-top:var(--s8)}
+.lot .cap{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lot .ph{aspect-ratio:4/5}.lot .ph img{width:100%;height:100%;object-fit:cover}
 .lot .cap span{font-variant-numeric:tabular-nums;color:var(--red-ink);font-weight:600;margin-right:6px}
 .ph{position:relative}.ph::after,.hero-ph::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.10;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
@@ -144,7 +147,7 @@ h2{margin:0;font-weight:750;font-stretch:68%;text-transform:uppercase;line-heigh
 .more{margin-top:var(--s7)}
 
 /* visit */
-.visit{padding:0 var(--gut) var(--s8)}
+.visit{padding:0 var(--gut) var(--s8);position:relative;z-index:1}
 .front{margin:0 calc(var(--gut) * -1) var(--s8);position:relative}
 .front img{width:100%;aspect-ratio:800/279;object-fit:cover}
 .front .cap{position:absolute;left:var(--gut);bottom:12px;color:#fff;margin:0;text-shadow:0 1px 6px rgba(0,0,0,.6)}
@@ -175,12 +178,13 @@ footer a{color:var(--night-text)}
 
 @media (min-width:600px){
   .qs{grid-template-columns:1fr 1fr;column-gap:var(--s7)}
-  .lot-grid{grid-template-columns:repeat(3,1fr);column-gap:var(--s5)}
-  .lf:nth-child(even){margin-top:0}.lf:nth-child(3n+2){margin-top:var(--s9)}.lf:nth-child(3n){margin-top:var(--s7)}
+  .lot-grid{grid-template-columns:repeat(4,1fr);column-gap:var(--s4)}
+
   .qs figure:nth-child(even){margin-top:var(--s9)}
 }
 @media (min-width:900px){
   .pv{font-size:.8125rem}
+  header.top{position:sticky}
   .nav{display:flex}
   .tag{display:block}
   .hd .btn{margin-left:var(--s5)}
@@ -188,12 +192,12 @@ footer a{color:var(--night-text)}
   .hero{grid-template-columns:repeat(12,1fr);column-gap:var(--s4);padding-top:0;height:calc(100svh - 96px);min-height:600px;max-height:1000px;grid-template-rows:1fr auto}
   .hero h1{grid-column:1/6;grid-row:1;font-size:min(10.4vw,23svh);align-self:end;padding-bottom:var(--s6)}
   .hero h1 .w{display:block}
-  .hero-copy{grid-column:1/6;grid-row:2;padding-bottom:var(--s7);border-top:1.5px solid var(--ink);padding-top:var(--s5);grid-template-columns:1fr auto;align-items:end}
+  .hero-copy{grid-column:1/6;grid-row:2;padding-bottom:var(--s7);border-top:1.5px solid var(--ink);padding-top:var(--s5);grid-template-columns:1fr;align-items:end}
   .hero-copy .lede{grid-column:1/-1}
   .hero-ph{grid-column:6/-1;grid-row:1/3;margin:0 calc(var(--gut) * -1) 0 0;aspect-ratio:auto;height:100%}
   .hero-ph figcaption{left:var(--s5)}
   .vin{display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--s4)}
-  .vin blockquote{grid-column:2/12;max-width:none}
+  .vin blockquote{grid-column:2/10;max-width:none}
   .vin .src{grid-column:8/12}
   .sec-h{grid-template-columns:repeat(12,1fr);column-gap:var(--s4);align-items:end}
   .sec-h h2{grid-column:1/8}.sec-h p{grid-column:9/-1}
@@ -231,9 +235,10 @@ footer a{color:var(--night-text)}
 .s3d-on .sun[data-step="0"] [data-l="0"],
 .s3d-on .sun[data-step="1"] [data-l="0"],.s3d-on .sun[data-step="1"] [data-l="1"]{opacity:1}
 .s3d-on .sun-stage{padding-top:84px}
+@media (max-width:899px){.s3d-on .sun-stage{padding-top:24px}}
 
 .s3d-on .sun[data-step="2"] [data-l]{opacity:1}
-.s3d-on .sun[data-step="2"] [data-l="2"] em{color:#fff;font-style:italic;background:linear-gradient(var(--red),var(--red)) 0 92%/100% .09em no-repeat}
+.lines em{font-style:italic}.s3d-on .sun[data-step="2"] [data-l="2"] em{color:#fff}
 .s3d-on .sun .meter span{color:var(--night-2)}
 .s3d-on .sun[data-step="0"] .meter [data-m="0"],.s3d-on .sun[data-step="1"] .meter [data-m="1"],.s3d-on .sun[data-step="2"] .meter [data-m="2"]{color:var(--night-text)}
 .meter-bar{display:none}
@@ -242,7 +247,7 @@ footer a{color:var(--night-text)}
 @media (min-width:900px){.s3d-on .meter-bar{max-width:calc(66svh*.75)}}
 
 @media (max-width:899px){
-  .s3d-on .sun-stage{padding:80px var(--gut) 112px;align-content:end;grid-template-rows:auto;gap:var(--s4)}
+  .s3d-on .sun-stage{padding:24px var(--gut) 112px;align-content:end;grid-template-rows:auto;gap:var(--s4)}
   .s3d-on .sun-h{position:relative;z-index:2;order:-1}
   .s3d-on .sun-h p{display:none}
   .s3d-on .sun-body{display:block}
@@ -253,7 +258,7 @@ footer a{color:var(--night-text)}
   .s3d-on .sun .meter-bar{position:absolute;left:var(--gut);right:var(--gut);bottom:100px;max-width:none;z-index:2}
   .s3d-on .sun .qcol{position:relative;z-index:2;padding-bottom:var(--s5)}
   .s3d-on .lines{font-size:clamp(1.45rem,6.4vw,2rem)}
-  .s3d-on .sun h2{font-size:clamp(2.2rem,11vw,3.4rem)}
+  .s3d-on .sun h2{font-size:clamp(1.8rem,8vw,2.6rem)}
 }
 /* hero depth: photo eases back, wordmark lifts */
 .s3d-on .hero h1{transform:translate3d(0,calc(var(--p,0) * -60px),0)}
@@ -290,6 +295,7 @@ footer a{color:var(--night-text)}
   </figure>
   <div class="hero-copy">
     <p class="lede">Collision repair and paint on North Nellis Boulevard, Las Vegas.</p>
+    <p class="rating"><b>5.0</b> on Google, more than 140 reviews</p>
     <p class="status" id="status"><i></i><span>Mon to Fri 8 to 6, Sat 8 to 1</span></p>
     <div class="ctas"><a class="btn red" href="tel:+17029857381">Call (702) 985-7381</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Tinocos%20Auto%20Body%2C%201322%20N%20Nellis%20Blvd%20Suite%20C%2C%20Las%20Vegas%2C%20NV%2089110" rel="noopener">Directions</a></div>
   </div>
@@ -341,15 +347,13 @@ footer a{color:var(--night-text)}
 <section class="lot" aria-labelledby="lot-h">
   <div class="sec-h">
     <h2 id="lot-h">From our lot</h2>
-    <p>Photos the shop posted to Google, 2023 to 2024. The two empty frames are the shot list for photo day.</p>
+    <p>Photos the shop posted to Google, 2023 to 2024.</p>
   </div>
   <div class="lot-grid">
-    <figure class="lf rise" data-s3d="in"><div class="ph"><img src="img/damage-480.webp" srcset="img/damage-480.webp 480w, img/damage-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A red Mustang GT in the lot with its front bumper and grille torn up and taped"></div><figcaption class="cap"><span>01</span> In the lot, March 2024</figcaption></figure>
-    <figure class="lf rise" data-s3d="in" style="--lag:.12"><div class="ph"><img src="img/booth-480.webp" srcset="img/booth-480.webp 480w, img/booth-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="Two crew members in red hoodies masking a car body inside the white paint booth"></div><figcaption class="cap"><span>02</span> Masking in the booth, March 2024</figcaption></figure>
-    <figure class="lf rise" data-s3d="in" style="--lag:.24"><div class="ph"><img src="img/finish-480.webp" srcset="img/finish-480.webp 480w, img/finish-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A red Chevrolet Camaro parked in front of the painted shop wall in afternoon sun"></div><figcaption class="cap"><span>03</span> At the wall, March 2023</figcaption></figure>
-    <figure class="lf rise" data-s3d="in"><div class="ph"><img src="img/tacoma-480.webp" srcset="img/tacoma-480.webp 480w, img/tacoma-800.webp 800w" sizes="(min-width:900px) 30vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A white Toyota Tacoma in front of the painted shop wall"></div><figcaption class="cap"><span>04</span> At the wall, August 2024</figcaption></figure>
-    <div class="lf shoot rise" data-s3d="in" style="--lag:.12"><p class="k">Reserved for the photo shoot</p><p>Alfredo at the booth door, late light.</p><small>Portrait. To be photographed for the finished site.</small></div>
-    <div class="lf shoot rise" data-s3d="in" style="--lag:.24"><p class="k">Reserved for the photo shoot</p><p>The same red panel, shot in shade and then in full sun.</p><small>Detail pair. To be photographed for the finished site.</small></div>
+    <figure class="lf rise" data-s3d="in"><div class="ph"><img src="img/damage-480.webp" srcset="img/damage-480.webp 480w, img/damage-800.webp 800w" sizes="(min-width:600px) 23vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A red Mustang GT in the lot with its front bumper and grille torn up and taped"></div><figcaption class="cap"><span>01</span> In the lot, 3/2024</figcaption></figure>
+    <figure class="lf rise" data-s3d="in" style="--lag:.12"><div class="ph"><img src="img/booth-480.webp" srcset="img/booth-480.webp 480w, img/booth-800.webp 800w" sizes="(min-width:600px) 23vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="Two crew members in red hoodies masking a car body inside the white paint booth"></div><figcaption class="cap"><span>02</span> In the booth, 3/2024</figcaption></figure>
+    <figure class="lf rise" data-s3d="in" style="--lag:.24"><div class="ph"><img src="img/finish-480.webp" srcset="img/finish-480.webp 480w, img/finish-800.webp 800w" sizes="(min-width:600px) 23vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A red Chevrolet Camaro parked in front of the painted shop wall in afternoon sun"></div><figcaption class="cap"><span>03</span> At the wall, 3/2023</figcaption></figure>
+    <figure class="lf rise" data-s3d="in"><div class="ph"><img src="img/tacoma-480.webp" srcset="img/tacoma-480.webp 480w, img/tacoma-800.webp 800w" sizes="(min-width:600px) 23vw, 46vw" width="480" height="600" loading="lazy" decoding="async" alt="A white Toyota Tacoma in front of the painted shop wall"></div><figcaption class="cap"><span>04</span> At the wall, 8/2024</figcaption></figure>
   </div>
 </section>
 
